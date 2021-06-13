@@ -12,7 +12,8 @@
     "format": "prettier --write '**/*.{js,ts,tsx,json}'",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
     "test": "jest",
-    "test-all": "yarn lint && yarn type-check && yarn test"
+    "test-all": "yarn lint && yarn type-check && yarn test",
+    "generate-css-types": "tailwindcss-classnames -i tailwind.config.js -o src/tw.ts"
   },
   "husky": {
     "hooks": {
