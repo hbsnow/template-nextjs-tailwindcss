@@ -20,8 +20,8 @@ class BaseDocument extends Document {
   render(): JSX.Element {
     return (
       <Html lang="ja">
+        <Head />
         <body>
-          <Head />
           <Main />
           <NextScript />
         </body>
