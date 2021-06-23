@@ -1,7 +1,7 @@
 /** @type {import('@typescript-eslint/experimental-utils').TSESLint.Linter.Config} */
 
 const config = {
-  extends: ["prettier", "next", "next/core-web-vitals"],
+  extends: ["next", "next/core-web-vitals", "prettier"],
   rules: {
     "import/order": [
       "error",
