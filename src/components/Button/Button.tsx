@@ -1,15 +1,23 @@
-import React, { ComponentPropsWithoutRef, PropsWithChildren } from "react";
+import React, {
+  ComponentPropsWithoutRef,
+  forwardRef,
+  PropsWithChildren,
+} from "react";
+
+import { classnames } from "tailwindcss-classnames";
 
 export type Props = Readonly<
   PropsWithChildren<Omit<ComponentPropsWithoutRef<"button">, "className">>
 >;
 
-export const Button = (props: Props): JSX.Element => {
-  const { children, ...rest } = props;
-
+export const Button = forwardRef<HTMLButtonElement, Props>((props, ref) => {
   return (
-    <button className={""} {...rest}>
-      {children}
-    </button>
+    <button
+      ref={ref}
+      className={classnames("bg-blue-400")}
+      data-testid="button"
+      {...props}
+    />
   );
-};
+});
+Button.displayName = "Button Component";
