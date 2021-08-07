@@ -20,4 +20,4 @@ export const Button = forwardRef<HTMLButtonElement, Props>((props, ref) => {
     />
   );
 });
-Button.displayName = "Button Component";
+Button.displayName = "Button";
