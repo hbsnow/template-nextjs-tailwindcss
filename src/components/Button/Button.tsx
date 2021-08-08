@@ -6,15 +6,18 @@ import React, {
 
 import { classnames } from "tailwindcss-classnames";
 
+import style from "./index.module.css";
+
 export type Props = Readonly<
   PropsWithChildren<Omit<ComponentPropsWithoutRef<"button">, "className">>
 >;
 
 export const Button = forwardRef<HTMLButtonElement, Props>((props, ref) => {
+  console.log(style);
   return (
     <button
       ref={ref}
-      className={classnames("bg-blue-400")}
+      className={`${classnames("bg-blue-800")} ${style.button}`}
       data-testid="button"
       {...props}
     />
