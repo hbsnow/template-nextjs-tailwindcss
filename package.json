@@ -6,7 +6,7 @@
     "dev": "TAILWIND_MODE=watch NODE_ENV=development next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "next lint . --cache",
     "format": "prettier --write '**/*.{js,ts,tsx,json}'",
     "typecheck": "tsc --pretty --noEmit",
     "test": "jest",
@@ -16,7 +16,7 @@
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
-      "eslint src",
+      "next lint . --cache --fix",
       "yarn format"
     ]
   },
