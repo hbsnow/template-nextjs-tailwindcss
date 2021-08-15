@@ -13,7 +13,6 @@ export type Props = Readonly<
 >;
 
 export const Button = forwardRef<HTMLButtonElement, Props>((props, ref) => {
-  console.log(style);
   return (
     <button
       ref={ref}
