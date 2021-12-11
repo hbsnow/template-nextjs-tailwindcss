@@ -18,8 +18,8 @@ module.exports = {
     builder: "webpack5",
   },
   webpackFinal: async (baseConfig) => {
-    // @see https://zenn.dev/nus3/articles/257d724e24a39b756b5a
     // デフォルトではcss modulesは読み込まれないので読み込まれるように設定する
+    // 参考: https://zenn.dev/nus3/articles/257d724e24a39b756b5a
     const cssRule = baseConfig.module.rules.find(
       (rule) => String(rule.test).indexOf("css") !== -1
     );
