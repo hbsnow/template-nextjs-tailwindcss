@@ -1,12 +1,8 @@
 /** @type {import('@types/tailwindcss/tailwind-config').TailwindConfig} */
 
 const config = {
-  purge: ["./public/**/*.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  content: ["./public/**/*.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
 };

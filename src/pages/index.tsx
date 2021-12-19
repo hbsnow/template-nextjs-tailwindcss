@@ -1,5 +1,3 @@
-import React from "react";
-
 import { NextPage } from "next";
 import { classnames } from "tailwindcss-classnames";
 

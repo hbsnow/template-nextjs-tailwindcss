@@ -1,8 +1,4 @@
-import React, {
-  ComponentPropsWithoutRef,
-  forwardRef,
-  PropsWithChildren,
-} from "react";
+import { ComponentPropsWithoutRef, forwardRef, PropsWithChildren } from "react";
 
 import { classnames } from "tailwindcss-classnames";
 
