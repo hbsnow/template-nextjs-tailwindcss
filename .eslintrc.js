@@ -4,6 +4,7 @@ const config = {
   extends: [
     "next",
     "next/core-web-vitals",
+    "plugin:storybook/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
   ],
